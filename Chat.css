@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.left_panel {
+    border: 2px solid #dedede;
+    padding: 10px;
+    height: 100%;
+    margin: 10px 0;
+    width: 20%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.right_panel {
+    border: 2px solid #dedede;
+    padding: 10px;
+    height: 100%;
+    margin: 10px 0;
+    height: 100%;
+    width: 80%;
+}
+
+.user_select {
+    border-radius: 5px;
+    display: flex;
+    padding: 10px;
+}
+
+.user_select:hover {
+    background : #f1f1f1;
+}
+
+.profile_photo {
+    float: left;
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.friend_name {
+    display: inline-block;
+    position: relative;
+}
