@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    overflow: hidden;
 }
 
 a {
@@ -8,7 +9,7 @@ a {
 
 .container {
     display: flex;
-    height: 100%;
+    height: 90%;
     width: 100%;
 }
 
@@ -37,6 +38,24 @@ a {
     padding: 10px;
 }
 
+.user_message {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.friend_message {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
 .user_select:hover {
     background : #f1f1f1;
 }
@@ -50,7 +69,34 @@ a {
     border-radius: 50%;
 }
 
+.profile_photo_right {
+    float: right;
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
 .friend_name {
     display: inline-block;
     position: relative;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
