@@ -1,14 +1,17 @@
 html, body {
     height: 100%;
-    overflow: hidden;
 }
 
 a {
     color: inherit;
 }
 
-.container {
+.flex {
     display: flex;
+    height: 100%;
+}
+
+.container {
     height: 90%;
     width: 100%;
 }
@@ -16,7 +19,6 @@ a {
 .left_panel {
     border: 2px solid #dedede;
     padding: 10px;
-    height: 100%;
     margin: 10px 0;
     width: 20%;
     height: 100%;
@@ -29,7 +31,8 @@ a {
     height: 100%;
     margin: 10px 0;
     height: 100%;
-    width: 80%;
+    width: 100%;
+    position: relative;
 }
 
 .user_select {
@@ -99,4 +102,26 @@ a {
 
 .right {
     float: right;
+}
+
+.no_pad {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.enter_text {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: inherit;
+    height: 50px;
+    background: #fafafa;
+    border: none;
+    outline: none;
+    color: #666;
+    font-weight: 400;
+    border: 1px solid #dedede;
+    padding: 10px;
 }
