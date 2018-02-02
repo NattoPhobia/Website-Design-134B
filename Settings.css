@@ -1,0 +1,102 @@
+html, body {
+    height: 90%;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.menu_option {
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+flex {
+    display: flex;
+}
+
+.menu_option a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.img_btn a:hover {
+    background-color: #111;
+}
+
+.logo {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.menu_text {
+    color: white;
+    padding-right: 10px;
+}
+
+#settings {
+    align-content: center;
+    text-align: center;
+}
+
+#settings_form {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
