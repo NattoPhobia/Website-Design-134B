@@ -21,11 +21,6 @@ a {
     height: 100%;
 }
 
-.chatbox {
-    position: relative;    
-    height: 100%;
-}
-
 .container {
     height: 100%;
     width: 100%;
@@ -34,10 +29,6 @@ a {
 
 .container div {
     margin-top: 0;
-}
-
-.max_height {
-    height: 100%;
 }
 
 .left_panel {
@@ -59,62 +50,11 @@ a {
     height: 100%;
     position: relative;
     overflow: auto;
-}
-
-.user_select {
-    border-radius: 5px;
+    align-content: center;
+    text-align: center;
     display: flex;
-    padding: 10px;
-}
-
-.user_message {
-    border: 2px solid #dedede;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px 0;
-    overflow: hidden;
-}
-
-.friend_message {
-    border: 2px solid #dedede;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px 0;
-    overflow: hidden;
-}
-
-.user_select:hover {
-    background : #f1f1f1;
-}
-
-.profile_photo {
-    float: left;
-    max-width: 50px;
-    max-height: 50px;
-    width: 100%;
-    margin-right: 20px;
-    border-radius: 50%;
-}
-
-.profile_photo_right {
-    float: right;
-    max-width: 50px;
-    max-height: 50px;
-    width: 100%;
-    margin-left: 20px;
-    border-radius: 50%;
-}
-
-.time-right {
-    float: right;
-    color: #aaa;
-}
-
-.time-left {
-    float: left;
-    color: #999;
+    justify-content: center;
+    align-items: center;
 }
 
 .left {
@@ -138,26 +78,11 @@ a {
     background-color: #f1f1f1;
 }
 
-.enter_text {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    width: 100%;
-    height: 50px;
-    background: #fafafa;
-    border: none;
-    outline: none;
-    color: #666;
-    font-weight: 400;
-    border: 1px solid #dedede;
-    padding: 10px;
-}
-
 .left_panel_bar {
     width: 20%;    
     background-color: #f1f1f1;
     border-right: solid 1px #dedede;
+    text-align: center;
 }
 
 .right_panel_bar {
@@ -186,10 +111,6 @@ a {
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
-}
-
 .img_btn a:hover {
     background-color: #111;
 }
@@ -197,4 +118,72 @@ li a:hover {
 .logo {
     max-width: 50px;
     max-height: 50px;
+}
+
+.left_panel_bar p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+#add_to_do {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    vertical-align: middle;
+    max-width: 25px;
+    max-height: 25px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.progress {
+    width: 7.5em;
+    height: 7.5em;
+    text-align: center;
+    line-height: 7.5em;
+    border-radius: 1em;
+    background: dodgerblue;
+    margin: 0 1em;
+    display: inline-block;
+    color: white;
+    position: relative;
+}
+
+.progress_text {
+    width: 7.5em;
+    text-align: center;
+    margin: 0 1em;
+    display: inline-block;
+    color:black;
+    position: relative;
+}
+
+.progress::before{
+    content: '';
+    position: absolute;
+    top: 3.9em;
+    left: -4em;
+    width: 4em;
+    height: .2em;
+    background: dodgerblue;
+    z-index: -1;
+}
+
+.progress:first-child::before {
+    display: none;
+}
+
+.active {
+    background: blue;
+}
+
+#task_list {
+    align-content: center;
+    text-align: center;
 }
