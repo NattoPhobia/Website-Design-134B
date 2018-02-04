@@ -49,14 +49,6 @@ flex {
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
-}
-
-.img_btn a:hover {
-    background-color: #111;
-}
-
 .logo {
     max-width: 50px;
     max-height: 50px;
