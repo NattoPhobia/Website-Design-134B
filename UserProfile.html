@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User's Profile</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(171, 188, 244)
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.border1{
+	border-style: solid;
+
+}
+
+.selection{
+	width: 50px;
+	overflow: hidden;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.textbox{
+	height:100px;
+	width: 400px;
+    font-size:14pt;
+}
+
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a class="icon" href="#home"><img src="hummingbird.png" height="70px" width="70px"></a></li>
+  <div class="right">
+  	 <li><a href="#Hello">Hello, Name!	</a></li>
+     <li><a href="#contact"><img src="email icon.png"></a></li>
+     <li><a href="#about"><img src="Profile_icon.png"></a></li>
+  </div>
+</ul>
+
+<br>
+<div class="clearfix">
+<img class="left" src="default_Profile.jpg" alt="default_Profile">
+	<div class="border1">
+		<form>
+			Name: <input type="text" name="username" value="">
+			<br><br>
+			Age: <input type="age" name="age" value="">
+			<br><br>
+			Phone: <input type="phone" name="phone" value="">
+			<br><br>
+			Religion: <input type="religion" name="religion" value="">
+			<br><br>
+			Ethnicity: <input type="ethnicity" name="ethnicity" value="">
+			<br><br>
+			Sex: <div class="selection">
+					<select>
+					<option>M</option>
+					<option>F</option>
+					</select>
+				</div>
+		</form>
+	</div>
+</div>
+
+<div class="clearfix">
+	<br>
+	Looking for:    Age Range:
+					<select>
+						<option>23 or below</option>
+						<option>26~34</option>
+						<option>35~45</option>
+						<option>45 or above</option>
+					</select>
+					<br>
+					Sex:
+					<select>
+						<option>M</option>
+						<option>F</option>
+					</select>
+					<br>
+					Ethnicity: <input type="text" name="ethnicity" value="">
+					<br>
+					City distance:
+					<select>
+						<option>4 miles or less</option>
+						<option>5~14 miles</option>
+						<option>15~24 miles</option>
+						<option>25~34 miles</option>
+						<option>35 miles or above</option>
+					</select>
+					<br>
+	<br><br>
+	Hobbies:  hobby 1 <input type="text" name="hobby1" value=""><br>
+			  hobby 2 <input type="text" name="hobby2" value=""><br>
+			  hobby 3 <input type="text" name="hobby3" value=""><br>
+			  hobby 4 <input type="text" name="hobby4" value=""><br>
+			  hobby 5 <input type="text" name="hobby5" value=""><br>
+</div>
+</body>
+</html>
