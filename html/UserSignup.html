@@ -1,113 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Agent's Profile</title>
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:rgb(171, 188, 244)
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.right {
-	float: right;
-}
-
-.left {
-	float: left;
-}
-
-.border1{
-	border-style: solid;
-
-}
-
-.selection{
-	width: 50px;
-	overflow: hidden;
-}
-
-.clearfix {
-    overflow: auto;
-    border: 1px solid black;
-    background-color: lightblue; 
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-    height: 400px;
-    width: 1000px;
-}
-
-.textbox{
-	height:100px;
-	width: 400px;
-    font-size:14pt;
-}
-
-</style>
+	<title>User Registration</title>
+    <link rel="stylesheet" href="../css/UserSignup.css">
+	<meta charset="utf-8">
 </head>
 <body>
+  <div class="container">
 
+        <div class="no_pad">
+            <ul class="menu flex">
+                <li class="logo"><a><img class="img_btn logo right" src="../resources/hummingbird_white.png" alt=""></a></li>
+                <li class="menu_option"><a><img class="img_btn logo right" src="../resources/user.png" alt=""></a></li>
+                <li class="menu_option"><a><img class="img_btn logo right" src="../resources/envelope.png" alt=""></a></li>
+                <li><p class="menu_option menu_text">Welcome, Bob!</p></li>
+            </ul>
+        </div>
 
-<ul>
-  <li><a class="icon" href="#home"><img src="hummingbird.png" height="70px" width="70px"></a></li>
-  <div class="right">
-  	 <li><a href="#Hello">Hello, Name!	</a></li>
-     <li><a href="#contact"><img src="email icon.png"></a></li>
-     <li><a href="#about"><img src="Profile_icon.png"></a></li>
-  </div>
-</ul>
+        <div id="form_container">
+            <h3>User Registration</h3>
 
-<br>
-<div class="clearfix">
-<img class="left" src="default_Profile.jpg" alt="default_Profile">
-	<div class="border1">
-		<form>
-			Name: <input type="text" name="username" value="">
-			<br><br>
-			Age: <input type="age" name="age" value="">
-			<br><br>
-			Phone: <input type="phone" name="phone" value="">
-			<br><br>
-			Email: <input type="email" name="email" value="">
-			<br><br>
-			Ethnicity: <input type="ethnicity" name="ethnicity" value="">
-			<br><br>
-			City: <input type="city" name="city" value="">
-			<br><br>
-			Sex: <div class="selection">
-					<select>
-					<option>M</option>
-					<option>F</option>
-					</select>
-				</div>
-		</form>
-	</div>
-</div>
+            <div>
+                <a href=""><img id="placeholder" src="../resources/Profile_icon.png"></a>
+            </div>
 
-<div class="clearfix">
-	<br>
-	Looking for: <input class="textbox" type="text" name="looking" value="" placeholder="Age, City, Ethnicity, religions and so on...">
-	<br><br><br>
-	Like:  <input class="textbox" type="text" name="like" value="">
-	<br><br>
-	Dislike: <input class="textbox" type="text" name="dislike" value="">
-	<br>
-</div>
+            <br>
+
+            <form id="form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Full Name" value="Bob Jones">
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Age" value="35">
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone" value="661-252-4214">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="City" value="San Diego">
+
+                <label for="ethnicity">Ethnicity</label>
+                <input type="text" id="ethnicity" name="ethnicity" placeholder="Ethnicity" value="African American">
+
+                <label for="prof">Profession</label>
+                <input type="text" id="prof" name="prof" placeholder="Profession" value="Teacher">
+            
+                <label for="sex">Sex</label>
+                <select id="sex" name="Sex" aria-valuemax="Male" required>
+                    <option value="eng">Male</option>
+                    <option value="eng">Female</option>
+                    <option value="eng">Other</option>
+				</select>
+
+				<h3>Looking For</h3>
+				<label for="part_sex">Sex</label>
+                <select id="part_sex" name="part_sex" aria-valuemax="Male" required>
+                    <option value="eng">Male</option>
+                    <option value="eng">Female</option>
+                    <option value="eng">Other</option>
+				</select>
+
+				<label for="part_age">Age</label>
+                <select id="part_age" name="part_age" aria-valuemax="23 or below" required>
+					<option>23 or below</option>
+					<option>26~34</option>
+					<option>35~45</option>
+					<option>45 or above</option>
+				</select>
+
+                <label for="part_ethnicity">Ethnicity</label>
+				<input type="text" id="part_ethnicity" name="part_ethnicity" placeholder="Ethnicity" value="African American">
+
+				<label for="city_dist">Distance</label>
+                <select id="city_dist" name="city_dist" aria-valuemax="4 miles or less" required>
+					<option>4 miles or less</option>
+					<option>5~14 miles</option>
+					<option>15~24 miles</option>
+					<option>25~34 miles</option>
+					<option>35 miles or above</option>
+				</select>
+
+                <label for="about_me">About Me</label>
+                <textarea id="about_me" name="about_me" placeholder="Enter something you'd like people to know about you!">About user...</textarea>
+            
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+
+    </div>
 </body>
 </html>
