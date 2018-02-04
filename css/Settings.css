@@ -55,7 +55,7 @@ flex {
     text-align: center;
 }
 
-input[type=text], input[type=number], input[type=tel], input[type=password], select, textarea {
+input[type=text], input[type=number], input[type=tel], input[type=password], input[type=submit], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -114,6 +114,10 @@ input[type=submit]:hover {
 
     .menu_option a {
         padding: 0px;
+    }
+
+    .submit {
+        width: 100%;
     }
 }
   
