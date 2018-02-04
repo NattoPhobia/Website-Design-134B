@@ -2,15 +2,6 @@ html, body {
     height: 100%;
     margin: 0;
     overflow: auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-div {
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
 }
 
 a {
@@ -67,7 +58,6 @@ li a:hover {
 }
 
 .logo {
-    background-image: 'hummingbird.png';
     max-width: 50px;
     max-height: 50px;
     float: left;

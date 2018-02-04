@@ -1,15 +1,6 @@
 html, body {
     height: 90%;
     margin: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-div {
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
 }
 
 .menu {
@@ -48,7 +39,6 @@ li a:hover {
 }
 
 .logo {
-    background-image: 'hummingbird.png';
     max-width: 50px;
     max-height: 50px;
     float: left;
@@ -81,10 +71,6 @@ input[type=text], input[type=number], input[type=tel], input[type=password], sel
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    -ms-box-sizing:content-box;
-    -moz-box-sizing:content-box;
-    -webkit-box-sizing:content-box; 
-    box-sizing:content-box;
 }
 
 select {
