@@ -7,6 +7,7 @@
 </head>
 <body>
     <div class="container">
+
         <div class="no_pad">
             <ul class="menu flex">
                 <li class="logo"><a><img class="img_btn logo right" src="hummingbird_white.png" alt=""></a></li>
@@ -15,6 +16,37 @@
                 <li><p class="menu_option menu_text">Welcome, Bob!</p></li>
             </ul>
         </div>
+
+        <div id="agent_profile">
+            <h3>Update Profile</h3>
+
+            <div>
+                <a href=""><img id="placeholder" src="Profile_icon.png"></a>
+            </div>
+
+            <br>
+
+            <form id="agent_profile_form">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Full Name">
+            
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+
+                <label for="password_repeat">Repeat Password</label>
+                <input type="password" id="password_repeat" name="password_repeat" placeholder="Re-enter New Password">
+            
+                <label for="language">Language</label>
+                <select id="language" name="Language">
+                <option value="eng">English</option>
+                </select>
+            
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+
     </div>
+
 </body>
 </html>
