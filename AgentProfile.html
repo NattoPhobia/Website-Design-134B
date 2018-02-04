@@ -28,21 +28,30 @@
 
             <form id="agent_profile_form">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Full Name">
+                <input type="text" id="name" name="name" placeholder="Full Name" value="Bob Jones">
 
                 <label for="age">Age</label>
-                <input type="number" id="age" name="age" placeholder="Age">
+                <input type="number" id="age" name="age" placeholder="Age" value="35">
 
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Phone">
+                <input type="tel" id="phone" name="phone" placeholder="Phone" value="661-252-4214">
 
                 <label for="ethnicity">Ethnicity</label>
-                <input type="text" id="ethnicity" name="ethnicity" placeholder="Ethnicity">
+                <input type="text" id="ethnicity" name="ethnicity" placeholder="Ethnicity" value="African American">
             
                 <label for="sex">Sex</label>
-                <select id="sex" name="Sex">
-                <option value="eng">Sex</option>
+                <select id="sex" name="Sex" aria-valuemax="Male" required>
+                    <option value="eng">Male</option>
+                    <option value="eng">Female</option>
+                    <option value="eng">Other</option>
                 </select>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description">Some information about the agent... </textarea>
+
+                <label for="experience">Experience</label>
+                <textarea id="experience" name="experience">Some of the agent's experience... </textarea>
+
             
                 <input type="submit" value="Submit">
             </form>
