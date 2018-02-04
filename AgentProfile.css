@@ -62,6 +62,8 @@ li a:hover {
 #agent_profile {
     align-content: center;
     text-align: center;
+    overflow: auto;
+    margin: 20px;
 }
 
 #agent_profile_form {
