@@ -135,7 +135,6 @@ input[type=submit]:hover {
     border-top: 2px solid #dedede;
     border-bottom: 2px solid #dedede;
     border-left: 2px solid #dedede;
-    border-radius: 5px;
     width: 25%;
     align-content: center;
     text-align: center;
@@ -152,7 +151,6 @@ input[type=submit]:hover {
     border-right: 2px solid #dedede;
     border-top: 2px solid #dedede;
     border-bottom: 2px solid #dedede;
-    border-radius: 5px;
     width: 75%;
     align-content: center;
     text-align: left;

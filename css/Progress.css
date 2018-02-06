@@ -158,7 +158,7 @@ a {
     line-height: 7.5em;
     border-radius: 1em;
     background: dodgerblue;
-    margin: 0 1em;
+    margin: 10px;
     display: inline-block;
     color: white;
     position: relative;
@@ -171,21 +171,6 @@ a {
     display: inline-block;
     color:black;
     position: relative;
-}
-
-.progress::before{
-    content: '';
-    position: absolute;
-    top: 3.9em;
-    left: -4em;
-    width: 4em;
-    height: .2em;
-    background: dodgerblue;
-    z-index: -1;
-}
-
-.progress:first-child::before {
-    display: none;
 }
 
 .active {
@@ -255,13 +240,6 @@ a {
         width: 100%;
     }
 
-    .progress::before {
-        display: none;
-    }
-
-    .progress {
-        margin: 10px
-    }
 }
   
 @media screen and (max-width: 600px) {
