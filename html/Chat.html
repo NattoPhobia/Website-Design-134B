@@ -28,70 +28,14 @@
         </div>
 
         <div class="flex chatbox no_pad">
-            <div class="left_panel no_pad">
-                <a style="text-decoration: none" href="">
-                    <div class="user_select">
-                        <img class="profile_photo" src="../resources/hummingbird.png" alt="profile_photo" >
-                        <p class="friend_name">Bob Jones</p>
-                    </div>
-                </a>
-
-                <a style="text-decoration: none" href="">
-                    <div class="user_select">
-                        <img class="profile_photo" src="../resources/hummingbird.png" alt="profile_photo" >
-                        <p class="friend_name">Bob Jones</p>
-                    </div>
-                </a>
-
-                <a style="text-decoration: none" href="">
-                    <div class="user_select">
-                        <img class="profile_photo" src="../resources/hummingbird.png" alt="profile_photo" >
-                        <p class="friend_name">Bob Jones</p>
-                    </div>
-                </a>
-
-                <a style="text-decoration: none" href="">
-                    <div class="user_select">
-                        <img class="profile_photo" src="../resources/hummingbird.png" alt="profile_photo" >
-                        <p class="friend_name">Bob Jones</p>
-                    </div>
-                </a>
-
-                <a style="text-decoration: none" href="">
-                    <div class="user_select">
-                        <img class="profile_photo" src="../resources/hummingbird.png" alt="profile_photo" >
-                        <p class="friend_name">Bob Jones</p>
-                    </div>
-                </a>
-            </div>
-
+            <div id="friend_panel" class="left_panel no_pad"></div>
             <div class="right_panel no_pad">
-                <div class="friend_message">
-                    <img class="profile_photo" src="../resources/hummingbird.png" alt="Avatar">
-                    <p class="left">Hello. How are you today?</p>
-                    <span class="time-right">11:00</span>
-                </div>
-
-                <div class="friend_message">
-                    <img class="profile_photo" src="../resources/hummingbird.png" alt="Avatar">
-                    <p class="left">Hello. How are you today?</p>
-                    <span class="time-right">11:00</span>
-                </div>
-
-                <div class="user_message">
-                    <img class="profile_photo_right" src="../resources/hummingbird.png" alt="Avatar">
-                    <p class="right">Hello. How are you today?</p>
-                    <span class="time-left">11:00</span>
-                </div>
-
-                <div class="friend_message">
-                    <img class="profile_photo" src="../resources/hummingbird.png" alt="Avatar">
-                    <p class="left">Hello. How are you today?</p>
-                    <span class="time-right">11:00</span>
-                </div>
-
-                <input class="textarea enter_text no_pad" type="text" placeholder="Type Here!"> </div>
+                <div id="chat"></div>
+                <div class="empty"></div>
+                <input id="chat_text" class="textarea enter_text no_pad" type="text" placeholder="Type Here!" onkeypress="sendMessage(event)"></div>
             </div>
         </div>
 </body>
 </html>
+
+<script src="../js/Chat.js"></script>
