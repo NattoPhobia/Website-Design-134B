@@ -12,9 +12,12 @@
 
         <div class="no_pad">
             <div class="menu">
-                <div class="logo"><a href=""><img class="img_btn logo right" src="../resources/hummingbird_white.png" alt=""></a></div>
-                <div class="menu_option"><a href=""><img class="img_btn logo right nav_btn" src="../resources/user.png" alt="Settings"></a></div>
-                <div class="menu_option"><a href=""><img class="img_btn logo right nav_btn" src="../resources/envelope.png" alt="Messages"></a></div>
+                <div class="logo"><button id="homeButton" style="background-color: #333; border:none;" onclick="directToHome()"><img class="logo" src="../resources/hummingbird_white.png" alt=""></button></div>
+
+                <div class="menu_option"><button id="profileButton" style="background-color: #333; border:none;" onclick="directToHome()"><img class="logo" src="../resources/user.png" alt=""></button></div>
+
+                <div class="menu_option"><button id="chatButton" style="background-color: #333; border:none;" onclick="directToChat()"><img class="logo" src="../resources/envelope.png" alt=""></button></div>
+
                 <div><p class="menu_option menu_text welcome_text">Welcome, Bob!</p></div>
             </div>
 			
@@ -32,7 +35,6 @@
 					</select>
 				</div>
 
-				<a href="">
 					<div class="agent">
 						<div class="agent_left_panel">
 							<img class="agent_photo" src="../resources/default_Profile.jpg" alt="">
@@ -43,10 +45,13 @@
 							<p>★★★☆☆</p>
 							<h5>San Diego, CA</h5>
 						</div>
+						
+						<div class="agent_rightmost_panel">
+						<button type="reset" style="width: 35px; height: 35px; margin-top: 55px; font-weight: bold" onclick="directToChooseAgent()">></button>
+						</div>
+						
 					</div>
-				</a>
 
-				<a href="">
 					<div class="agent">
 						<div class="agent_left_panel">
 							<img class="agent_photo" src="../resources/default_Profile.jpg" alt="">
@@ -57,10 +62,13 @@
 							<p>★★★☆☆</p>
 							<h5>San Diego, CA</h5>
 						</div>
+						
+						<div class="agent_rightmost_panel">
+						<button type="reset" style="width: 35px; height: 35px; margin-top: 55px; font-weight: bold" onclick="directToChooseAgent()">></button>
+						</div>
+						
 					</div>
-				</a>
 
-				<a href="">
 					<div class="agent">
 						<div class="agent_left_panel">
 							<img class="agent_photo" src="../resources/default_Profile.jpg" alt="">
@@ -71,10 +79,14 @@
 							<p>★★★☆☆</p>
 							<h5>San Diego, CA</h5>
 						</div>
+						
+						<div class="agent_rightmost_panel">
+						<button type="reset" style="width: 35px; height: 35px; margin-top: 55px; font-weight: bold" onclick="directToChooseAgent()">></button>
+						</div>
+						
 					</div>
-				</a>
 
-				<a href="">
+				
 					<div class="agent">
 						<div class="agent_left_panel">
 							<img class="agent_photo" src="../resources/default_Profile.jpg" alt="">
@@ -85,10 +97,13 @@
 							<p>★★★☆☆</p>
 							<h5>San Diego, CA</h5>
 						</div>
+						
+						<div class="agent_rightmost_panel">
+						<button type="reset" style="width: 35px; height: 35px; margin-top: 55px; font-weight: bold" onclick="directToChooseAgent()">></button>
+						</div>
+						
 					</div>
-				</a>
 
-				<a href="">
 					<div class="agent">
 						<div class="agent_left_panel">
 							<img class="agent_photo" src="../resources/default_Profile.jpg" alt="">
@@ -99,14 +114,17 @@
 							<p>★★★☆☆</p>
 							<h5>San Diego, CA</h5>
 						</div>
+						
+						<div class="agent_rightmost_panel">
+						<button type="reset" style="width: 35px; height: 35px; margin-top: 55px; font-weight: bold" onclick="directToChooseAgent()">></button>
+						</div>
+						
 					</div>
-				</a>
 			</div>
 		</div>
 	</div>
 
-		<p></p>
-
+	<script src="../js/Agent.js"></script>
 
 </body>
 
