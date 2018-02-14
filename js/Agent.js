@@ -7,5 +7,5 @@ function directToChat(){
 }
 
 function directToChooseAgent(){
-	window.location.replace("");
+	window.location = "../html/ChooseAgent.html";
 } 
