@@ -55,7 +55,7 @@ flex {
     text-align: center;
 }
 
-input[type=text], input[type=number], input[type=tel], input[type=password], input[type=submit], select, textarea {
+input[type=text], input[type=number], input[type=tel], input[type=password], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -65,7 +65,7 @@ input[type=text], input[type=number], input[type=tel], input[type=password], inp
     resize: vertical;
     -ms-box-sizing:content-box;
     -moz-box-sizing:content-box;
-    -webkit-box-sizing:content-box; 
+    -webkit-box-sizing:content-box;
     box-sizing:content-box;
 }
 
@@ -80,6 +80,10 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #45a049;
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box;
 }
 
 @media screen and (max-width: 600px) {

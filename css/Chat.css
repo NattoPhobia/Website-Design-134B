@@ -84,6 +84,7 @@ a {
 
 .user_select:hover {
     background : #f1f1f1;
+    border: 1px solid #dedede;
 }
 
 .profile_photo {
