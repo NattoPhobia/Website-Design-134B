@@ -42,6 +42,17 @@ function confirmComplete(confirmButton) {
     }
 }
 
+function updateProgress(active) {
+    var progressBoxes = document.getElementsByClassName("progress");
+    for(var i = 0; i < progressBoxes.length; i++) {
+        var progressBox = progressBoxes[i];
+        progressBox.classList.remove("active");
+    }
+
+    active.classList.add("active");
+
+}
+
 var task1 = new Task("Task 1");
 var task2 = new Task("Task 2");
 var task3 = new Task("Task 3");
