@@ -172,14 +172,16 @@ input[type=submit]:hover {
 }
 
 .back_button{
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 3px;
     font-family: Georgia;
 }
 
 .request_button{
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 3px;
     font-family: Georgia;
 }
 
