@@ -130,7 +130,6 @@ input[type=submit]:hover {
 }
 
 .agent_left_panel {
-    margin-top: 20px;
     background-color: #f1f1f1;
     border-top: 2px solid #dedede;
     border-bottom: 2px solid #dedede;
@@ -146,14 +145,13 @@ input[type=submit]:hover {
 }
 
 .agent_right_panel {
-    margin-top: 20px;
-    background-color: #f1f1f1;
     border-right: 2px solid #dedede;
     border-top: 2px solid #dedede;
     border-bottom: 2px solid #dedede;
-    width: 75%;
+    background-color: #f1f1f1;
+    width: 60%;
     align-content: center;
-    text-align: left;
+    text-align: center;
     max-height: 150px;
     height: 150px;
     align-items: center;
@@ -168,6 +166,270 @@ input[type=submit]:hover {
 .button{
     margin-top: 10px; 
     margin-left: 10px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#myInput {
+    background-image: url('../resources/searchicon.jpg');
+    background-size: 20px;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 70%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    align-content: center;
+}
+
+#myUL{
+    text-align: center;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#myUL li a{
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 70%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: 100 px;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.popup1 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 70%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup1 .popuptext1 {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: 100 px;
+}
+
+.popup1 .popuptext1::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup1 .show1 {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.popup2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 70%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup2 .popuptext2 {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: 100 px;
+}
+
+.popup2 .popuptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup2 .show2 {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.popup3 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 70%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup3 .popuptext3 {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: 100 px;
+}
+
+.popup3 .popuptext3::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup3 .show3 {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.popup4 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 70%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup4 .popuptext4 {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: 100 px;
+}
+
+.popup4 .popuptext4::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup4 .show4 {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }
 
 @media screen and (max-width: 800px) {
