@@ -29,24 +29,31 @@
             <br>
 
             <form id="form">
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Full Name" value="Bob Jones">
+                <input type="text" id="name" name="name" placeholder="Full Name">
 
                 <label for="age">Age</label>
-                <input type="number" id="age" name="age" placeholder="Age" value="35">
+                <input type="number" id="age" name="age" placeholder="Age">
 
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Phone" value="661-252-4214">
+                <input type="tel" id="phone" name="phone" placeholder="Phone">
 
                 <label for="city">City</label>
-                <input type="text" id="city" name="city" placeholder="City" value="San Diego">
+                <input type="text" id="city" name="city" placeholder="City">
 
                 <label for="ethnicity">Ethnicity</label>
-                <input type="text" id="ethnicity" name="ethnicity" placeholder="Ethnicity" value="African American">
+                <input type="text" id="ethnicity" name="ethnicity" placeholder="Ethnicity">
 
 
                 <label for="prof">Profession</label>
-                <input type="text" id="prof" name="prof" placeholder="Profession" value="Teacher">
+                <input type="text" id="prof" name="prof" placeholder="Profession">
             
                 <label for="sex">Sex</label>
                 <select id="sex" name="Sex">
@@ -56,13 +63,12 @@
                 </select>
 
                 <label for="description">Description</label>
-                <textarea id="description" name="description">Some information about the agent... </textarea>
+                <textarea id="description" name="description"></textarea>
 
                 <label for="experience">Experience</label>
-                <textarea id="experience" name="experience">Some of the agent's experience... </textarea>
+                <textarea id="experience" name="experience"></textarea>
 
-            
-                <input class="submit" type="submit" value="Submit">
+                <input type="submit" onclick="onSubmit(); return false" value="Submit">
             </form>
 
         </div>
@@ -71,3 +77,5 @@
 
 </body>
 </html>
+
+<script src="../js/AgentSignup.js"></script>

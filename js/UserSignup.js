@@ -1,9 +1,12 @@
 var existingUsers = localStorage.getItem("users");
-console.log(existingUsers);
 existingUsers = JSON.parse(existingUsers);
 
-function User(username, name, age, phone, city, ethnicity, profession, sex, aboutMe, prefSex, prefAge, prefEthnicity, prefDistance) {
+/*
+ * User Object
+ */
+function User(username, password, name, age, phone, city, ethnicity, profession, sex, aboutMe, prefSex, prefAge, prefEthnicity, prefDistance) {
     this.username = username;
+    this.password = password;
     this.name = name;
     this.age = age;
     this.phone = phone;
@@ -16,12 +19,13 @@ function User(username, name, age, phone, city, ethnicity, profession, sex, abou
     this.prefAge = prefAge;
     this.prefEthnicity = prefEthnicity;
     this.prefDistance = prefDistance;
+    this.userType = "user";
 }
 
 function onSubmit() {
-
     // user details
     var userName = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
     var name = document.getElementById("name").value;
     var age = document.getElementById("age").value;
     var phone = document.getElementById("phone").value;
@@ -37,7 +41,7 @@ function onSubmit() {
     var prefEthnicity = document.getElementById("part_ethnicity").value;
     var prefDistance = document.getElementById("city_dist").value;
 
-    var newUser = new User(userName, name, age, phone, city, ethnicity, profession, sex, aboutMe, prefSex, prefAge, prefEthnicity, prefDistance);
+    var newUser = new User(userName, password, name, age, phone, city, ethnicity, profession, sex, aboutMe, prefSex, prefAge, prefEthnicity, prefDistance);
 
     if(userExists(newUser)) {
         window.alert("Username already taken!");
@@ -55,7 +59,7 @@ function userExists(user) {
     if(existingUsers != null) {
         for(var i = 0; i < existingUsers.length; i++) {
             var currUser = existingUsers[i];
-            if(currUser.username === user.username) {
+            if(currUser.username.toLowerCase() === user.username.toLowerCase()) {
                 return true;
             }
         }
