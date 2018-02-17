@@ -23,16 +23,16 @@ a {
     padding-right: 10px;
 }
 
-.profile{
+.profile {
     width: 50%;
 }
 
 .agentProfile {
-   float: right;
+    float: right;
 }
 
-ul{
-    list-style-type : none;
+ul {
+    list-style-type: none;
 }
 
 flex {
@@ -87,10 +87,10 @@ input[type=text], input[type=number], input[type=tel], input[type=password], sel
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    -ms-box-sizing:content-box;
-    -moz-box-sizing:content-box;
-    -webkit-box-sizing:content-box; 
-    box-sizing:content-box;
+    -ms-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 input[type=submit] {
@@ -163,12 +163,12 @@ input[type=submit]:hover {
     border-radius: 50%;
 }
 
-.button{
-    margin-top: 10px; 
+.button {
+    margin-top: 10px;
     margin-left: 10px;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -185,14 +185,14 @@ input[type=submit]:hover {
     align-content: center;
 }
 
-#myUL{
+#myUL {
     text-align: center;
     list-style-type: none;
     padding: 0px;
     margin: 0px;
 }
 
-#myUL li a{
+#myUL li a {
     border: 1px solid #ddd;
     margin-top: -1px;
     background-color: #f6f6f6;
@@ -230,7 +230,7 @@ input[type=submit]:hover {
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: 100 px;
+    margin-left: 100px;
 }
 
 .popup .popuptext::after {
@@ -273,7 +273,7 @@ input[type=submit]:hover {
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: 100 px;
+    margin-left: 100px;
 }
 
 .popup1 .popuptext1::after {
@@ -316,7 +316,7 @@ input[type=submit]:hover {
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: 100 px;
+    margin-left: 100px;
 }
 
 .popup2 .popuptext2::after {
@@ -359,7 +359,7 @@ input[type=submit]:hover {
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: 100 px;
+    margin-left: 100px;
 }
 
 .popup3 .popuptext3::after {
@@ -402,7 +402,7 @@ input[type=submit]:hover {
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: 100 px;
+    margin-left: 100px;
 }
 
 .popup4 .popuptext4::after {
@@ -423,20 +423,31 @@ input[type=submit]:hover {
 }
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    .menu a:not(:first-child) {display: none;}
+    .menu a:not(:first-child) {
+        display: none;
+    }
+
     .menu a.icon {
-      float: right;
-      display: block;
+        float: right;
+        display: block;
     }
 
     .welcome_text, .nav_btn {
@@ -479,17 +490,28 @@ input[type=submit]:hover {
     }
 
 }
-  
+
 @media screen and (max-width: 600px) {
-    .menu .responsive {position: relative;}
+    .menu .responsive {
+        position: relative;
+    }
+
     .menu .responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
+
     .menu.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+        float: none;
+        display: block;
+        text-align: left;
     }
+}
+
+.reset {
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    float: right;
 }
