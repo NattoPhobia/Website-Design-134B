@@ -1,5 +1,4 @@
-var existingUsers = localStorage.getItem("users");
-existingUsers = JSON.parse(existingUsers);
+var existingUsers = JSON.parse(localStorage.getItem("users"));
 console.log(existingUsers);
 
 function login() {
@@ -16,7 +15,7 @@ function validateCredentials(username, password) {
         if (currUser.username.toLowerCase() === username.toLowerCase()) {
             userFound = true;
             if (currUser.password === password) {
-                localStorage.setItem("currUser", existingUsers[i]);
+                localStorage.setItem("currUser", JSON.stringify(existingUsers[i]));
                 toMainScreen(currUser.userType);
             } else {
                 window.alert("Incorrect password!");
