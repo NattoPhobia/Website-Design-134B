@@ -14,12 +14,12 @@ function loadAgents(agents){
 	for (var i = 0; i < agents.length;i++) {
 		var agt = agents[i];
 
-		document.getElementByClassName("agent").innerHTML += '<div class="agent_left_panel"> <img class="agent_photo" src="' + agt.image_url + 
-			'" alt=""> </div><div class="agent_right_panel"> <h3>' + agt.name + '</h3> <p>' + agt.stars + '</p> <h5>' + agt.address + '</h5></div> <div class="agent_rightmost_panel"><button type="reset" style="width: 35px; height: 35px; margin-top: 55px; font-weight: bold" onclick="directToChooseAgent()">></button></div>';
+		document.getElementByClassName("agent").innerHTML += '<div class="agent"><div class="agent_left_panel"> <img class="agent_photo" src="' + agt.image_url + 
+			'" alt=""> </div><div class="agent_right_panel"> <h3>' + agt.name + '</h3> <p>' + agt.stars + '</p> <h5>' + agt.address + '</h5></div> <div class="agent_rightmost_panel"><button type="reset" style="width: 35px; height: 35px; margin-top: 55px; font-weight: bold" onclick="directToChooseAgent()">></button></div></div>';
 	}
 }
 
-function uniqueAgent(name, stars, address image_url){
+function uniqueAgent(name, stars, address, image_url){
 	this.name = name;
 	this.stars = stars;
 	this.address = address;
