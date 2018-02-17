@@ -8,81 +8,64 @@
 </head>
 
 <body>
-    <div class="container">
-			
         <div class="no_pad">
             <div class="menu flex">
-                <div class="logo"><a href=""><img class="img_btn logo right" src="../resources/hummingbird_white.png" alt=""></a></div>
-                <div class="menu_option"><a href=""><img class="img_btn logo right nav_btn" src="../resources/user.png" alt="Settings"></a></div>
-                <div class="menu_option"><a href=""><img class="img_btn logo right nav_btn" src="../resources/envelope.png" alt="Messages"></a></div>
+                <div class="logo"><button id="homeButton" style="background-color: #333; border:none;" onclick="directToHome()"><img class="logo" src="../resources/hummingbird_white.png" alt=""></button></div>
+
+                <div class="menu_option"><button id="profileButton" style="background-color: #333; border:none;" onclick="directToHome()"><img class="logo" src="../resources/user.png" alt=""></button></div>
+
+                <div class="menu_option"><button id="chatButton" style="background-color: #333; border:none;" onclick="directToChat()"><img class="logo" src="../resources/envelope.png" alt=""></button></div>
+                
             </div>
-			<div class="content">
-				<div class="button">
-					<button>Female  X </button> 
-					<button>Asian  X </button>
-					<button>Age: 18-25  X </button>
-				</div>
 
-				<a href="">
-					<div class="agent">
-						<div class="agent_left_panel">
-							<img class="agent_photo" src="../resources/default_Profile.jpg" alt="">
-						</div>
 
-						<div class="agent_right_panel">
-							<h3>Client Name:</h3>
-							<h3>Looking for:</h3>
-							<h3>Hobbies:</h3>
-						</div>
-					</div>
-				</a>
+            <h1 style="text-align: center;">Client List</h1>
 
-				<a href="">
-					<div class="agent">
-						<div class="agent_left_panel">
-							<img class="agent_photo" src="../resources/default_Profile.jpg" alt="">
-						</div>
+            <div style="text-align: center;">
 
-						<div class="agent_right_panel">
-							<h3>Client Name:</h3>
-							<h3>Looking for:</h3>
-							<h3>Hobbies:</h3>
-						</div>
-					</div>
-				</a>
+            <input type="text" id="myInput" onkeyup="search()" placeholder="Search for names" title="Type in a name">
 
-				<a href="">
-					<div class="agent">
-						<div class="agent_left_panel">
-							<img class="agent_photo" src="../resources/default_Profile.jpg" alt="">
-						</div>
+        	</div>
 
-						<div class="agent_right_panel">
-							<h3>Client Name:</h3>
-							<h3>Looking for:</h3>
-							<h3>Hobbies:</h3>
-						</div>
-					</div>
-				</a>
+            <ul id="myUL">
 
-				<a href="">
-					<div class="agent">
-						<div class="agent_left_panel">
-							<img class="agent_photo" src="../resources/default_Profile.jpg" alt="">
-						</div>
+            	<div class="popup" onclick="popup()">
 
-						<div class="agent_right_panel">
-							<h3>Client Name:</h3>
-							<h3>Looking for:</h3>
-							<h3>Hobbies:</h3>
-						</div>
-					</div>
-				</a>
+            		<li><a href = "#"><font style="font-size: 20px; font-family: Trebuchet MS;">Bill</font><button type="reset" style="width: 25px; height: 25px; font-weight: bold; float: right;" onclick="directToMatched()">></button></a><span class="popuptext" id="myPopup">Sexuality: M<br> Age: 28 </br>Ethnicity: Asian<br>Phone: (666)666-6666</br></span></li>
+
+
+            	</div>
+
+            	<div class="popup1" onclick="popup1()">
+
+            		<li><a href = "#"><font style="font-size: 20px; font-family: Trebuchet MS;">Rachel</font><button type="reset" style="width: 25px; height: 25px; font-weight: bold; float: right;" onclick="directToMatched()">></button></a><span class="popuptext1" id="myPopup1">Sexuality: F<br> Age: 23 </br>Ethnicity: White<br>Phone: (666)666-6666</br></span></li>
+
+            	</div>
+
+            	<div class="popup2" onclick="popup2()">
+
+            		<li><a href = "#"><font style="font-size: 20px; font-family: Trebuchet MS;">Jenn</font><button type="reset" style="width: 25px; height: 25px; font-weight: bold; float: right;" onclick="directToMatched()">></button></a><span class="popuptext2" id="myPopup2">Sexuality: F<br> Age: 33 </br>Ethnicity: Asian<br>Phone: (666)666-6666</br></span></li>
+
+            	</div>
+
+            	<div class="popup3" onclick="popup3()">
+
+            		<li><a href = "#"><font style="font-size: 20px; font-family: Trebuchet MS;">Jordan</font><button type="reset" style="width: 25px; height: 25px; font-weight: bold; float: right;" onclick="directToMatched()">></button></a><span class="popuptext3" id="myPopup3">Sexuality: M<br> Age: 20 </br>Ethnicity: African American<br>Phone: (666)666-6666</br></span></li>
+
+            	</div>
+
+            	<div class="popup4" onclick="popup4()">
+
+            		<li><a href = "#"><font style="font-size: 20px; font-family: Trebuchet MS;">Aviana</font><button type="reset" style="width: 25px; height: 25px; font-weight: bold; float: right;" onclick="directToMatched()">></button></a><span class="popuptext4" id="myPopup4">Sexuality: F<br> Age: 22 </br>Ethnicity: Latino<br>Phone: (666)666-6666</br></span></li>
+
+            	</div>
+
+            </ul>
+
 			</div>
-		</div>
 
-		<p></p>
-	</div>
+	<script src="../js/AgentManagement.js"></script>
+
 </body>
 
 </html>
