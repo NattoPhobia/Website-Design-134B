@@ -5,9 +5,10 @@ function Message(text, timestamp, photoUrl, user_type) {
     this.user_type = user_type;
 }
 
-function Friend(name, image_url) {
+function Friend(name, image_url, messageHistory) {
     this.name = name;
     this.image_url = image_url;
+    this.messageHistory = messageHistory;
 }
 
 function loadChatHistory(history) {
